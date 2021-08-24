@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="Interaktiv Historie.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Interaktiv Historie</title>
+    <script>
+    function Velg(iderSomSkalVises){
+      let iderSomSkalSkjules = document.getElementsByClassName("ElementSomSkalSkjules");//['KonfronterMennene', 'GjemDeg', 'NektÅBetale', 'OfreLillebror', 'VentTilDeDrar', 'KastVasen', 'StjelTilbakeLillebror', 'VærSivilisert', 'AngripMennene', 'StjelTilbakeVasen', 'VentLittTil', 'GåNedIgjen', 'AngripMennene2', 'LeggDegPåBakkenOgGråt', 'AksepterSituasjonen', 'Fortsett', 'LesLappen', 'BliLiggende', 'GråtLittTil', 'VentPåEnLøsning', 'LevMedSkammen']
+      for(let i = 0; i < iderSomSkalSkjules.length; i++){
+        iderSomSkalSkjules[i].style.display = "none";
+        console.log("skjules " + i)
+      }
+      for(let i = 0; i < iderSomSkalSkjules.length; i++){
+        document.getElementById(iderSomSkalVises[i]).style.display = "block";
+        console.log("vises " + i)
+      }
+
+    }
+    </script>
+  </head>
+  <body>
+
+    <div class="Ramme">
+
+<!--Tittel-->
+      <div class="Tittel ElementSomSkalSkjules">
+        <div class="TittelBilde">
+          <img src="Tittel.png" width="1000" alt="Tittel?">
+        </div>
+        <div class="StartKnapp">
+          <a href="#Start"><img src="StartKnapp.png" height="42" onclick="Velg(['Start'])"></img></a>
+        </div>
+      </div>
+
+<!--Start, 1-->
+      <div id= "Start" class="StartBox ElementSomSkalSkjules">
+        <div class="StartTextRamme">
+          <div class="StartText">
+            <p>En dag satt Erik og tenkte på hvor glad han var for at han ikke betalte skatt, når lillebroren hans kom inn i rommet. <br> <br> - Det er to skumle menn fra Skatteetaten utenfor som sier du ikke har betalt skatt. </p>
+          </div>
+        </div>
+        <div class="StartBilde">
+          <img src="Start.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="StartKnapper">
+          <a href="#KonfronterMennene"><img src="KonfronterMenneneKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene'])"></img></a>
+          <a href="#GjemDeg"><img src="GjemDegKnapp.png" height="42" onclick="Velg(['Start','GjemDeg'])"></img></a>
+        </div>
+      </div>
+
+<!--Konfronter mennene, 2-->
+      <div id= "KonfronterMennene" class="KonfronterMenneneBox ElementSomSkalSkjules">
+        <div class="KonfronterMenneneTextRamme">
+          <div class="KonfronterMenneneText">
+            <p>Erik gikk ut av huset og konfronterte de to mennene. Begge i dress og solbriller og med en pen, svart og blank bil litt lenger bak dem. <br> <br> -Vi er her for å hente det du skylder i skatt, sa den ene mannen. <br> <br> Erik hadde akkurat brukt alle pengene sine på å kjøpe Minecraft, så han kunne ikke ha betalt selv om han ville.</p>
+          </div>
+        </div>
+        <div class="KonfronterMenneneBilde">
+          <img src="Konfornter mennene.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="KonfronterMenneneKnapper">
+          <a href="#NektÅBetale"><img src="NektÅBetaleKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','NektÅBetale'])"></img></a>
+          <a href="#OfreLillebror"><img src="OfreLillebrorKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror'])"></img></a>
+        </div>
+      </div>
+
+<!--Gjem deg, 2-->
+      <div id= "GjemDeg" class="GjemDegBox ElementSomSkalSkjules">
+        <div class="GjemDegTextRamme">
+          <div class="GjemDegText">
+            <p id="hometest">Erik løp opp på loftet og låste loftsluka ovenfra. Han hadde aldri betalt skatten sin før og hadde ikke tenkt til å starte nå. Erik så ut av loftsviduet og så to menn i dress og solbriller stå utenfor med en svart, blank bil. For noen arrogante tullinger! Hvem trodde de at de var? Kom hjem til Erik og bare forventa penger? Erik vurderte å kaste noe på dem i forakt og avsky mot alt de stod for. </p>
+          </div>
+        </div>
+        <div class="GjemDegBilde">
+          <img src="Gjem deg.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="GjemDegKnapper">
+          <a href="#VentTilDeDrar"><img src="VentTilDeDrarKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','VentTilDeDrar'])"></img></a>
+          <a href="#KastVasen"><img src="KastVasenKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','KastVasen'])"></img></a>
+        </div>
+      </div>
+
+<!--Nekt å betale, 3-->
+      <div id= "NektÅBetale" class="NektÅBetaleBox ElementSomSkalSkjules">
+        <div class="NektÅBetaleTextRamme">
+          <div class="NektÅBetaleText">
+            <p>Erik bestemte seg for å ikke gi disse mennene noe av det han skyldte.</p>
+          </div>
+        </div>
+        <div class="NektÅBetaleBilde">
+          <img src="Nekt å betale.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="NektÅBetaleKnapper">
+          <a href="#AngripMennene"><img src="AngripMenneneKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','NektÅBetale','AngripMennene'])"></img></a>
+          <a href="#VærSivilisert"><img src="VærSivilisertKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','NektÅBetale','VærSivilisert'])"></img></a>
+        </div>
+      </div>
+
+<!--Ofre lillebror, 3-->
+      <div id= "OfreLillebror" class="OfreLillebrorBox ElementSomSkalSkjules">
+        <div class="OfreLillebrorTextRamme">
+          <div class="OfreLillebrorText">
+            <p>Erik sa at mennene kunne få lillebroren hans som betaling for det hans skyldte. Dette gikk mennene med på. Erik var kvitt gjelda si. Han gikk inn i huset for å slappe av igjen, nå som han hverken hadde gjeld eller lillebror. Livet var bra. Men noe var galt... Nå som Erik hadde gitt fra seg lillebroren sin slo det han at han teknisk sett har betalt skatt!</p>
+          </div>
+        </div>
+        <div class="OfreLillebrorBilde">
+          <img src="Ofre lillebror.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="OfreLillebrorKnapper">
+          <a href="#LevMedSkammen"><img src="LevMedSkammenKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','LevMedSkammen'])"></img></a>
+          <a href="#StjelTilbakeLillebror"><img src="StjelTilbakeLillebrorKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','StjelTilbakeLillebror'])"></img></a>
+        </div>
+      </div>
+
+<!--Vent til de drar, 3-->
+      <div id= "VentTilDeDrar" class="VentTilDeDrarBox ElementSomSkalSkjules">
+        <div class="VentTilDeDrarTextRamme">
+          <div class="VentTilDeDrarText">
+            <p>Erik la fra seg forakten og venta til mennene dro. Et par timer senere så det ut som de var borte. Ingen skummle men stod utenfor, og bilen var borte.</p>
+          </div>
+        </div>
+        <div class="VentTilDeDrarBilde">
+          <img src="Vent til mennene drar.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="VentTilDeDrarKnapper">
+          <a href="#GåNedIgjen"><img src="GåNedIgjenKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','VentTilDeDrar','GåNedIgjen'])"></img></a>
+          <a href="#VentLittTil"><img src="VentLittTilKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','VentTilDeDrar','VentLittTil'])"></img></a>
+        </div>
+      </div>
+
+<!--Kast vasen, 3-->
+      <div id= "KastVasen" class="KastVasenBox ElementSomSkalSkjules">
+        <div class="KastVasenTextRamme">
+          <div class="KastVasenText">
+            <p>Erik åpna vinduet og kastet en vase som stod ved siden av han ned på mennene. Vasen var på vei rett mot hodet til den ene mannen. Rett før vasen traff den arrogante, hårløse skallen hans, rykket han til, tok imot vasen og så opp på Erik. Mannen så ned på vasen igjen og studerte den grundig, så så han på den andre mannen og nikket. Mennene gikk tilbake til bilen sin med vasen og dro. Så slo det Erik hva han nettopp hadde gjort. Mennene hadde tatt vasen som betaling for det han skyldte.</p>
+          </div>
+        </div>
+        <div class="KastVasenBilde">
+          <img src="Åpne vinduet og kast en vase på mennene.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="KastVasenKnapper">
+          <a href="#LevMedSkammen"><img src="LevMedSkammenKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','KastVasen','LevMedSkammen'])"></img></a>
+          <a href="#StjelTilbakeVasen"><img src="StjelTilbakeVaseKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','KastVasen','StjelTilbakeVasen'])"></img></a>
+        </div>
+      </div>
+
+<!--Stjel tilbake lillebror, 4-->
+      <div id= "StjelTilbakeLillebror" class="StjelTilbakeLillebrorBox ElementSomSkalSkjules">
+        <div class="StjelTilbakeLillebrorTextRamme">
+          <div class="StjelTilbakeLillebrorText">
+            <p>Erik løp ut av huset igjen for å stjele tilbake lillebroren sin. Han hadde søren ikke tenkt til å leve med å ha betalt skatt. Lenger fremme så han bilen med de to mennene og lillebroren hans kjøre vekk. Erik kunne ikke ta dem igjen.</p>
+          </div>
+        </div>
+        <div class="StjelTilbakeLillebrorBilde">
+          <img src="Stjel tilbake lillebror.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="StjelTilbakeLillebrorKnapper">
+          <a href="#LevMedSkammen"><img src="LevMedSkammenKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','StjelTilbakeLillebror','LevMedSkammen'])"></img></a>
+          <a href="#LeggDegPåBakkenOgGråt"><img src="LeggDegNedOgGråtKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','StjelTilbakeLillebror','LeggDegPåBakkenOgGråt'])"></img></a>
+        </div>
+      </div>
+
+<!--Snakk med mennene på en sivilisert måte, 4-->
+      <div id= "VærSivilisert" class="VærSivilisertBox ElementSomSkalSkjules">
+        <div class="VærSivilisertTextRamme">
+          <div class="VærSivilisertText">
+            <p>Erik fortalte det som det var. Han hadde brukt opp alle pengene sine på å kjøpe Minecraft og kunne derfor ikke betale ned det han skyldte. Mennene sa ingen ting, bare så på hverandre, nikket og gikk. Lettet gikk Erik inn i huset igjen. Han visste godt at de kom til å komme tilbake igjen imorgen og lurte på hvordan han skulle gå frem nestegang de kom.</p>
+          </div>
+        </div>
+        <div class="VærSivilisertBilde">
+          <img src="Snakk med mennene på en sivilisert måte.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="VærSivilisertKnapper">
+          <a href="#Start"><img src="NesteDagKnapp.png" height="42" onclick="Velg(['Start'])"></img></a>
+        </div>
+      </div>
+
+<!--Angrip mennene, 4-->
+      <div id= "AngripMennene" class="AngripMenneneBox ElementSomSkalSkjules">
+        <div class="AngripMenneneTextRamme">
+          <div class="AngripMenneneText">
+            <p>Erik så at den ene mannen hadde en taser i lomma. Om han tok den før mennene rakk å reagere kunne han bruke den til å forsvare seg og jage dem vekk så de ikke kunne tvinge han til å betale skatt! Erik tok sats, dette kunne funke. Han stupte mot taseren. Nå var ingen ting som kunne stå mellom han og hans skattefrie livsstil. Erik bomma og slo hodet i bakken. </p>
+          </div>
+        </div>
+        <div class="AngripMenneneBilde">
+          <img src="Angrip mennene.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="AngripMenneneKnapper">
+          <a href="#AngripMennene2"><img src="FortsettKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','NektÅBetale','AngripMennene','AngripMennene2'])"></img></a>
+        </div>
+      </div>
+
+<!--Stjel tilbake vasen, 4-->
+      <div id= "StjelTilbakeVasen" class="StjelTilbakeVasenBox ElementSomSkalSkjules">
+        <div class="StjelTilbakeVasenTextRamme">
+          <div class="StjelTilbakeVasenText">
+            <p>Erik løp ned fra loftet og ut av huset for å stjele tilbake vasen sin. Han hadde faen ikke tenkt til å leve med at han betalte skatt. Lenger fremme så han bilen med de to mennene og vasen hans kjøre vekk. Erik kunne ikke ta dem igjen.</p>
+          </div>
+        </div>
+        <div class="StjelTilbakeVasenBilde">
+          <img src="Løp etter mennene for å stjele tilbake vasen.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="StjelTilbakeVasenKnapper">
+          <a href="#IkkeAksepterSituasjonen"><img src="IkkeAksepterSituasjonenKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','KastVasen','StjelTilbakeVasen','IkkeAksepterSituasjonen'])"></img></a>
+          <a href="#AksepterSituasjonen"><img src="AksepterSituasjonenKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','KastVasen','StjelTilbakeVasen','AksepterSituasjonen'])"></img></a>
+        </div>
+      </div>
+
+<!--Vent litt til, 4-->
+      <div id= "VentLittTil" class="VentLittTilBox ElementSomSkalSkjules">
+        <div class="VentLittTilTextRamme">
+          <div class="VentLittTilText">
+            <p>Erik bestemte seg for å vente litt til, bare for sikkerhetsskyld. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å vente et par timer til. Et par timer senere tenkte Erik det kanskje var på tide å gå ned igjen. Men hva om mennene fortsatt var der og venta på han? Erik bestemte seg for å</p>
+          </div>
+        </div>
+        <div class="VentLittTilBilde">
+          <img src="Vent litt til.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="VentLittTilKnapper">
+          <a href="#Fortsett"><img src="FortsettKnapp.png" height="42" onclick="Velg(['Start','GjemDeg','VentTilDeDrar','VentLittTil','Fortsett'])"></img></a>
+        </div>
+      </div>
+
+<!--Gå ned fra loftet, 4-->
+      <div id= "GåNedIgjen" class="GåNedIgjenBox ElementSomSkalSkjules">
+        <div class="GåNedIgjenTextRamme">
+          <div class="GåNedIgjenText">
+            <p>Erik låste opp luka og gikk ned igjen. Der var ingen skumle men med dress og solbriller å se. Lettet gikk han inn på rommet sitt for å spille Minecraft. Han gikk inn soveromsdøra og la merke til at PC-en hans var borte! Jævlene hadde tatt PC-en hans som betaling for det han skyldte. Det må ha vært en stund siden de dro, så Erik hadde ingen sjangse til å ta dem igjen. PC-en hans var sikkert allerede stengt inne i en av hvelvene til Skatteetaten. </p>
+          </div>
+        </div>
+        <div class="GåNedIgjenBilde">
+          <img src="Gå ned fra loftet.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="GåNedIgjenSluttRamme">
+          <div class="GåNedIgjenSluttText">
+            <p>Erik betalte skatt og fikk ikke spille Minecraft... Kunne det ha gått noe værre? Antageligvis ikke...</p>
+          </div>
+        </div>
+      </div>
+
+<!--Angrip mennene 2, 5-->
+      <div id= "AngripMennene2" class="AngripMennene2Box ElementSomSkalSkjules">
+        <div class="AngripMennene2TextRamme">
+          <div class="AngripMennene2Text">
+            <p>Etter å ha ligget bevisstløs noen minutter våkna Erik med en postit-lapp klistret fast på kinnet hans.</p>
+          </div>
+        </div>
+        <div class="AngripMennene2Bilde">
+          <img src="Angrip mennene 2.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="AngripMennene2Knapper">
+          <a href="#LesLappen"><img src="LesLappenKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','NektÅBetale','AngripMennene','AngripMennene2','LesLappen'])"></img></a>
+          <a href="#BliLiggende"><img src="BliLiggendeKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','NektÅBetale','AngripMennene','AngripMennene2','BliLiggende'])"></img></a>
+        </div>
+      </div>
+
+<!--Legg deg på bakken og gråt stille, 5-->
+      <div id= "LeggDegPåBakkenOgGråt" class="LeggDegPåBakkenOgGråtBox ElementSomSkalSkjules">
+        <div class="LeggDegPåBakkenOgGråtTextRamme">
+          <div class="LeggDegPåBakkenOgGråtText">
+            <p>Erik la seg i fosterstilling på bakken og begynte å gråte. Han hadde betalt skatt.</p>
+          </div>
+        </div>
+        <div class="LeggDegPåBakkenOgGråtBilde">
+          <img src="Legg deg på bakken og gråt stille.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="LeggDegPåBakkenOgGråtKnapper">
+          <a href="#LevMedSkammen"><img src="LevMedSkammenKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','StjelTilbakeLillebror','LeggDegPåBakkenOgGråt','LevMedSkammen'])"></img></a>
+          <a href="#GråtLittTil"><img src="GråtLittTilKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','StjelTilbakeLillebror','LeggDegPåBakkenOgGråt','GråtLittTil'])"></img></a>
+        </div>
+      </div>
+
+<!--Aksepter situasjonen, 5-->
+      <div id= "AksepterSituasjonen" class="AksepterSituasjonenBox ElementSomSkalSkjules">
+        <div class="AksepterSituasjonenTextRamme">
+          <div class="AksepterSituasjonenText">
+            <p>Erik sukket. Isteden for å stå her og synes synd på seg selv bestemte han seg for å skjerpe seg og tjene tilbake det han hadde mistet på en ærlig og redelig måte. Erik ble NAVer.</p>
+          </div>
+        </div>
+        <div class="AksepterSituasjonenBilde">
+          <img src="Aksepter situasjonen.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="AksepterSituasjonenSluttRamme">
+          <div class="AksepterSituasjonenSluttText">
+            <p>Erik betalte skatt, men levde resten av livet sitt på pengene han fikk fra staten. Det er ikke godt å si om dette er en bra eller dårlig slutt...</p>
+          </div>
+        </div>
+      </div>
+
+<!--Fortsett..., 5-->
+      <div id= "Fortsett" class="FortsettBox ElementSomSkalSkjules">
+        <div class="FortsettTextRamme">
+          <div class="FortsettText">
+            <p>Erik døde av sult og dehydrering 19. april 2021. Hans siste dager levde han lykkelig i viten om at han ikke hadde betalt skatt.</p>
+          </div>
+        </div>
+        <div class="FortsettBilde">
+          <img src="Fortsett.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="FortsettSluttRamme">
+          <div class="FortsettSluttText">
+            <p>Erik unngikk å betale skatt. Godt jobba!</p>
+          </div>
+        </div>
+      </div>
+
+<!--Ikke aksepter situasjonen, 5-->
+      <div id= "IkkeAksepterSituasjonen" class="IkkeAksepterSituasjonenBox ElementSomSkalSkjules">
+        <div class="IkkeAksepterSituasjonenTextRamme">
+          <div class="IkkeAksepterSituasjonenText">
+            <p>Nei. Det var ikke sånn det skulle ende. Erik skulle ha tilbake den vasen. De følgene årene jobbet Erik hard og lenge for å få tilbake det som ble tatt fra han. Det tok hundrevis av søvnløse netter og han mistet kontakt med mange av sine nærmeste venner, men etter flere år med slit, mas og jag hadde han gjort det. Han hadde blitt sjefen for Skatteetaten og kunne ta tilbake vasen som ble tatt fra han for så mange år siden.</p>
+          </div>
+        </div>
+        <div class="IkkeAksepterSituasjonenBilde">
+          <img src="Ikke aksepter situasjonen.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="IkkeAksepterSituasjonenSluttRamme">
+          <div class="IkkeAksepterSituasjonenSluttText">
+            <p>Erik betalte skatt, men fikk den tilbake igjen...? Han er også nå sjefen over alt han sto imot. Prøv noe annet kanskje? </p>
+          </div>
+        </div>
+      </div>
+
+<!--Les lappen, 6-->
+      <div id= "LesLappen" class="LesLappenBox ElementSomSkalSkjules">
+        <div class="LesLappenTextRamme">
+          <div class="LesLappenText">
+            <p>"Vi tok PC-en din som betaling for det du skylder xoxo -Skattetaten"</p>
+          </div>
+        </div>
+        <div class="LesLappenBilde">
+          <img src="Les lappen.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="LesLappenSluttRamme">
+          <div class="LesLappenSluttText">
+            <p>Erik hadde betalt skatt og fikk aldri spilt Minecraft. Tragisk.</p>
+          </div>
+        </div>
+      </div>
+
+<!--Bli liggende, 6-->
+      <div id= "BliLiggende" class="BliLiggendeBox ElementSomSkalSkjules">
+        <div class="BliLiggendeTextRamme">
+          <div class="BliLiggendeText">
+            <p>Erik krøllet sammen lappen og ble liggende på bakken for å kontemplere livet. Kanskje det å betale skatt ikke var så ille likevel. Han hadde tross alt betalt for vanlige produkter før, så han hadde jo betalt merverdiavgiften som er en form for skatt. Kanskje det at han levde bedre når han ikke betalte skatt bare var i hodet hans hele tiden.</p>
+          </div>
+        </div>
+        <div class="BliLiggendeBilde">
+          <img src="Bli liggende.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="BliLiggendeSluttRamme">
+          <div class="BliLiggendeSluttText">
+            <p>Erik hadde betalt skatt og levde lykkelig resten av livet sitt som en god statsborger. Han fortsatte å betale skatten sin og betalte aldri etter tidfristen. Livet var bra. <br> Du tapte, prøv igjen.</p>
+          </div>
+        </div>
+      </div>
+
+<!--Gråt litt til, 6-->
+      <div id= "GråtLittTil" class="GråtLittTilBox ElementSomSkalSkjules">
+        <div class="GråtLittTilTextRamme">
+          <div class="GråtLittTilText">
+            <p>Erik gråt litt til. Var dette slutten? Hadde han betalt skatt? Var det virkelig sånn det skulle ende? Ja. Erik hadde akkurat bidratt positivt til samfunnet.</p>
+          </div>
+        </div>
+        <div class="GråtLittTilBilde">
+          <img src="Gråt litt til.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="GråtLittTilKnapper">
+          <a href="#LevMedSkammen"><img src="LevMedSkammenKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','StjelTilbakeLillebror','LeggDegPåBakkenOgGråt','GråtLittTil','LevMedSkammen'])"></img></a>
+          <a href="#VentPåEnLøsning"><img src="VentPåEnLøsningKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','StjelTilbakeLillebror','LeggDegPåBakkenOgGråt','GråtLittTil','VentPåEnLøsning'])"></img></a>
+        </div>
+      </div>
+
+<!--Vent på at situasjonen skal løse seg, 7-->
+      <div id= "VentPåEnLøsning" class="VentPåEnLøsningBox ElementSomSkalSkjules">
+        <div class="VentPåEnLøsningTextRamme">
+          <div class="VentPåEnLøsningText">
+            <p>Situasjonen løste seg ikke</p>
+          </div>
+        </div>
+        <div class="VentPåEnLøsningBilde">
+          <img src="Vent på at situasjonen skal løse seg.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="VentPåEnLøsningKnapper">
+          <a href="#LevMedSkammen"><img src="LevMedSkammenKnapp.png" height="42" onclick="Velg(['Start','KonfronterMennene','OfreLillebror','StjelTilbakeLillebror','LeggDegPåBakkenOgGråt','GråtLittTil','VentPåEnLøsning','LevMedSkammen'])"></img></a>
+        </div>
+      </div>
+
+<!--Lev med skammen, 4 til 8-->
+      <div id= "LevMedSkammen" class="LevMedSkammenBox ElementSomSkalSkjules">
+        <div class="LevMedSkammenTextRamme">
+          <div class="LevMedSkammenText">
+            <p>Erik bestemte seg for å leve med skammen. Han hadde betalt skatt.</p>
+          </div>
+        </div>
+        <div class="LevMedSkammenBilde">
+          <img src="Lev med skammen.png" alt="Bilde?" width="600" height="450">
+        </div>
+        <div class="LevMedSkammenSluttRamme">
+          <div class="LevMedSkammenSluttText">
+            <p>Erik hadde betalt skatt og hatet seg selv for det resten av livet. Gjør han en tjeneste og prøv igjen.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
