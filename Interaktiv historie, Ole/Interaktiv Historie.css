@@ -1,0 +1,1195 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+p {
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Tittel {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: -25vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.TittelBilde {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  flex-direction: column;
+  width: 1000px;
+  margin-left: 200px;
+
+}
+
+.StartKnapp {
+  display: flex;
+  justify-content: center;
+  margin-right: 65px;
+}
+
+.Ramme {
+  display: flex;
+  background-color: white;
+  height: auto;
+  width: 52vw;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.StartBox {
+  display: flex;
+  background-color: black;
+  height: 720px;
+  width: 49vw;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.StartBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.StartTextRamme {
+  display: flex;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.StartText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.StartKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+
+
+.KonfronterMenneneBox {
+  display: flex;
+  background-color: black;
+  height: 790px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.KonfronterMenneneBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.KonfronterMenneneTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.KonfronterMenneneText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.KonfronterMenneneKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.GjemDegBox {
+  display: flex;
+  background-color: black;
+  height: 755px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.GjemDegBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.GjemDegTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.GjemDegText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.GjemDegKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.NektÅBetaleBox {
+  display: flex;
+  background-color: black;
+  height: 665px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.NektÅBetaleBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.NektÅBetaleTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.NektÅBetaleText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.NektÅBetaleKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+.OfreLillebrorBox {
+  display: flex;
+  background-color: black;
+  height: 755px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.OfreLillebrorBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.OfreLillebrorTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.OfreLillebrorText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.OfreLillebrorKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+
+
+.VentTilDeDrarBox {
+  display: flex;
+  background-color: black;
+  height: 685px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.VentTilDeDrarBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.VentTilDeDrarTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.VentTilDeDrarText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.VentTilDeDrarKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.KastVasenBox {
+  display: flex;
+  background-color: black;
+  height: 790px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.KastVasenBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.KastVasenTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.KastVasenText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.KastVasenKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.LevMedSkammenBox {
+  display: flex;
+  background-color: black;
+  height: 725px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.LevMedSkammenBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.LevMedSkammenTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.LevMedSkammenText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.LevMedSkammenSluttRamme {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.LevMedSkammenSluttText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.StjelTilbakeLillebrorBox {
+  display: flex;
+  background-color: black;
+  height: 700px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.StjelTilbakeLillebrorBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.StjelTilbakeLillebrorTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.StjelTilbakeLillebrorText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.StjelTilbakeLillebrorKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 15px;
+}
+
+
+
+.LeggDegPåBakkenOgGråtBox {
+  display: flex;
+  background-color: black;
+  height: 665px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.LeggDegPåBakkenOgGråtBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.LeggDegPåBakkenOgGråtTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.LeggDegPåBakkenOgGråtText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.LeggDegPåBakkenOgGråtKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.VærSivilisertBox {
+  display: flex;
+  background-color: black;
+  height: 755px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.VærSivilisertBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.VærSivilisertTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.VærSivilisertText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.VærSivilisertKnapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.AngripMenneneBox {
+  display: flex;
+  background-color: black;
+  height: 755px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.AngripMenneneBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.AngripMenneneTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.AngripMenneneText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.AngripMenneneKnapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.StjelTilbakeVasenBox {
+  display: flex;
+  background-color: black;
+  height: 700px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.StjelTilbakeVasenBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.StjelTilbakeVasenTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.StjelTilbakeVasenText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.StjelTilbakeVasenKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.VentLittTilBox {
+  display: flex;
+  background-color: black;
+  height: 815px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.VentLittTilBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.VentLittTilTextRamme {
+  display: flex;
+  background-color: white;
+  height: 250px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.VentLittTilText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.VentLittTilKnapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.GåNedIgjenBox {
+  display: flex;
+  background-color: black;
+  height: 855px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.GåNedIgjenBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.GåNedIgjenTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.GåNedIgjenText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.GåNedIgjenKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+.GåNedIgjenSluttRamme {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.GåNedIgjenSluttText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.LesLappenBox {
+  display: flex;
+  background-color: black;
+  height: 725px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.LesLappenBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.LesLappenTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.LesLappenText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.LesLappenSluttRamme {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.LesLappenSluttText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.AngripMennene2Box {
+  display: flex;
+  background-color: black;
+  height: 665px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.AngripMennene2Bilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.AngripMennene2TextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.AngripMennene2Text {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.AngripMennene2Knapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.BliLiggendeBox {
+  display: flex;
+  background-color: black;
+  height: 835px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.BliLiggendeBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.BliLiggendeTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.BliLiggendeText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.BliLiggendeSluttRamme {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.BliLiggendeSluttText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.GråtLittTilBox {
+  display: flex;
+  background-color: black;
+  height: 685px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.GråtLittTilBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.GråtLittTilTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.GråtLittTilText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.GråtLittTilKnapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.VentPåEnLøsningBox {
+  display: flex;
+  background-color: black;
+  height: 650px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.VentPåEnLøsningBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.VentPåEnLøsningTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 342px;
+}
+
+.VentPåEnLøsningText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.VentPåEnLøsningKnapper {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 15px;
+}
+
+
+
+.AksepterSituasjonenBox {
+  display: flex;
+  background-color: black;
+  height: 780px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.AksepterSituasjonenBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.AksepterSituasjonenTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.AksepterSituasjonenText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.AksepterSituasjonenSluttRamme {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.AksepterSituasjonenSluttText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.FortsettBox {
+  display: flex;
+  background-color: black;
+  height: 725px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.FortsettBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.FortsettTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.FortsettText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.FortsettSluttRamme {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 117px;
+  margin-right: 117px;
+  margin-bottom: 20px;
+}
+
+.FortsettSluttText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+
+.IkkeAksepterSituasjonenBox {
+  display: flex;
+  background-color: black;
+  height: 855px;
+  width: 49vw;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+  display: none;
+}
+
+.IkkeAksepterSituasjonenBilde {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.IkkeAksepterSituasjonenTextRamme {
+  display: flex;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.IkkeAksepterSituasjonenText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IkkeAksepterSituasjonenSluttRamme {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.IkkeAksepterSituasjonenSluttText {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
